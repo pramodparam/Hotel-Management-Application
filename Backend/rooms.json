@@ -1,0 +1,78 @@
+[
+
+    {
+    
+        "name": "Hotel shiva sai",
+        "imageUrl": [
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/340ea5ee01acc37f.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/9b75ea873012234c.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/d12b3a343f16cb28.jpg"
+        ],
+        "rentPerDay": 1500,
+        "type": "Deluxe",
+        "maxCount": 3,
+        "phoneNumber": "9876543210",
+        "currentBookings": [],
+        "description": "This is a very good hotel"
+    },
+    {
+       
+        "name": "Hotel Narayani Residency",
+        "imageUrl": [
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/ff80cdc13a9832df.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/c11025d7f461121b.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/bb783cf9a2b1f35b.jpg"
+        ],
+        "rentPerDay": 2500,
+        "type": "Deluxe",
+        "maxCount": 3,
+        "phoneNumber": "9876543324",
+        "currentBookings": [],
+        "description": "This is a very good hotel"
+    },
+    {
+       
+        "name": "Hotel shiva sai",
+        "imageUrl": [
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/3d68e6affdf43c18.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/0fbd36321cf49f40.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/63ef79df1ffcfef5.jpg"
+        ],
+        "rentPerDay": 1500,
+        "type": "Deluxe",
+        "maxCount": 3,
+        "phoneNumber": "9876543210",
+        "currentBookings": [],
+        "description": "This is a very good hotel"
+    },
+    {
+       
+        "name": "Hotel shiva sai",
+        "imageUrl": [
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/acc162dea7861b9b.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/e7717c4955e5a81c.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/09938b4f62ca370e.jpg"
+        ],
+        "rentPerDay": 1500,
+        "type": "Deluxe",
+        "maxCount": 3,
+        "phoneNumber": "9876543210",
+        "currentBookings": [],
+        "description": "This is a very good hotel"
+        
+    },{
+       
+        "name": "Hotel vinay",
+        "imageUrl": [
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/697ac4b4514d9d5c.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/e0306175706fe9ce.jpg",
+            "https://images.oyoroomscdn.com/uploads/hotel_image/1097/6d09a807ebb7860b.jpg"
+        ],
+        "rentPerDay": 1500,
+        "type": "Deluxe",
+        "maxCount": 3,
+        "phoneNumber": "9876543210",
+        "currentBookings": [],
+        "description": "Worth for money"
+    }
+]
