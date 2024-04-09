@@ -3,7 +3,7 @@ import { Tabs } from 'antd';
 import axios from 'axios'
 import Loader from "../components/Loader";
 import Swal from 'sweetalert2'
-import Error from "../components/Error";
+
 const items = [
     {
         key: '1',
@@ -51,7 +51,7 @@ export function Bookings() {
         async function fetchData() {
             try {
 
-                const data = await (await axios.get('/api/bookings/getallbookings')).data
+                const data = await (await axios.get('https://hotel-management-application-1.onrender.com/api/bookings/getallbookings')).data
                 setBookings(data)
                 setLoading(false)
             } catch (err) {
@@ -110,7 +110,7 @@ export function Rooms() {
         async function fetchData() {
             try {
 
-                const data = await (await axios.get('/api/rooms/getAllRooms')).data
+                const data = await (await axios.get('https://hotel-management-application-1.onrender.com/api/rooms/getAllRooms')).data
                 setRooms(data)
                 setLoading(false)
             } catch (err) {
@@ -166,7 +166,7 @@ export function Users() {
         async function fetchData() {
             try {
 
-                const data = await (await axios.get('/api/users/getAllUsers')).data
+                const data = await (await axios.get('https://hotel-management-application-1.onrender.com/api/users/getAllUsers')).data
                 setUsers(data)
                 setLoading(false)
             } catch (err) {

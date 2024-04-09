@@ -5,7 +5,7 @@ import Loader from "../components/Loader";
 import Swal from 'sweetalert2'
 import Error from "../components/Error";
 import StripeCheckout from 'react-stripe-checkout';
-import moment from "moment";
+
 function BookingScreen({ match }) {
     const params = useParams();
     const id = params.roomid;
@@ -40,7 +40,7 @@ function BookingScreen({ match }) {
         }
         try {
             setLoading(true)
-            const res = await axios.post('/api/bookings/bookRoom', bookingDetails)
+            const res = await axios.post('https://hotel-management-application.onrender.com/api/bookings/bookRoom', bookingDetails)
             setLoading(false)
             
             Swal.fire('Congratulations','Your Room Booked Successfully','success').then((res)=>{
@@ -62,7 +62,7 @@ function BookingScreen({ match }) {
         const fetchData = async () => {
             try {
                 setLoading(true)
-                const data = (await axios.post('/api/rooms/getRoomById', { roomid: id })).data
+                const data = (await axios.post('https://hotel-management-application.onrender.com/api/rooms/getRoomById', { roomid: id })).data
                 setTotalAmount(rent)
                 setRooms(data)
                 setLoading(false)

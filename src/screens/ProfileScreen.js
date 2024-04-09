@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Loader from "../components/Loader";
 import Swal from 'sweetalert2'
-import { Divider, Flex, Tag } from 'antd';
-import Error from "../components/Error";
+import {Tag } from 'antd';
+
 import { Tabs } from 'antd';
 
 const user = JSON.parse(localStorage.getItem('currentUser'))
@@ -63,7 +63,7 @@ export function MyBookings() {
     const fetchData = async () => {
       try {
         setLoading(true)
-        const bookedRooms = await (await axios.post('/api/bookings/getBookingsByuserid', { userid: user._id })).data
+        const bookedRooms = await (await axios.post('https://hotel-management-application.onrender.com/api/bookings/getBookingsByuserid', { userid: user._id })).data
         
 
         setBookings(bookedRooms)
@@ -71,7 +71,7 @@ export function MyBookings() {
       } catch (err) {
         console.log(err)
         setLoading(false)
-        setError(err)
+        setError(error)
       }
 
     }
@@ -85,7 +85,7 @@ export function MyBookings() {
 
     try {
       setLoading(true)
-      const res = await (await axios.post('/api/bookings/cancelBooking', { bookingid, roomid })).data
+      const res = await (await axios.post('https://hotel-management-application.onrender.com/api/bookings/cancelBooking', { bookingid, roomid })).data
       console.log(res)
       setLoading(false)
       Swal.fire('Congrats', 'Your Booking Has Been Cancelled', 'success').then((res) => {

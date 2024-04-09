@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+
 import Loader from "../components/Loader";
 import Error from "../components/Error";
 function Login() {
@@ -15,7 +15,7 @@ function Login() {
         const user = { email, password }
         try {
             setLoading(true)
-            const res = await axios.post('/api/users/login', user)
+            const res = await axios.post('https://hotel-management-application.onrender.com/api/users/login', user)
             console.log(res.data);
             setLoading(false)
             localStorage.setItem('currentUser', JSON.stringify(res.data))  

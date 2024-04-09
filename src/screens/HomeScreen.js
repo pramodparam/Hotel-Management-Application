@@ -3,9 +3,8 @@ import { useState ,useEffect} from "react";
 import axios from 'axios';
 import Room from "../components/Room";
 import Loader from "../components/Loader";
-import Error from "../components/Error";
-//import 'antd/dist/reset.css'
-import moment from 'moment'
+
+
 import { DatePicker } from 'antd'
 
 const { RangePicker } = DatePicker;
@@ -24,7 +23,7 @@ function HomeScreen() {
         const fetchData = async () => {
             try {
                setLoading(true)
-               const data=(await axios.get('api/rooms/getAllRooms')).data
+               const data=(await axios.get('https://hotel-management-application.onrender.com/api/rooms/getAllRooms')).data
               
                setRooms(data)
                 console.log(rooms)
@@ -32,7 +31,7 @@ function HomeScreen() {
                 setLoading(false)
             } catch (err) {
                 console.log(err)
-                setError(true)
+                setError(error)
                 setLoading(false)
             }
         }

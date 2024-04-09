@@ -32,7 +32,8 @@ function Register() {
 
                     try {
                         setLoading(true)
-                        const res = await axios.post('/api/users/register', user).data
+                        const res = await axios.post('https://hotel-management-application.onrender.com/api/users/register', user).data
+                        console.log(res)
                         setLoading(false)
                         setSuccess(true)
                         setName('')
